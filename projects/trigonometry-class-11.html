@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class 11 Trigonometry: Formulas, Ratios and Practice | TrigoPath</title>
+<meta name="description" content="Learn Class 11 trigonometry with clear notes: trigonometric ratios, standard angle values, identities and a free sin, cos, tan calculator.">
+<link rel="canonical" href="https://www.yourdomain.com/projects/trigonometry-class-11.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Class 11 Trigonometry: Formulas, Ratios and Practice">
+<meta property="og:description" content="Clear notes, standard angle table and a free calculator for Class 11 students.">
+<link rel="icon" href="../logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Course","name":"Class 11 Trigonometry","description":"Notes on trigonometric ratios, identities and standard angles for Class 11.","provider":{"@type":"Organization","name":"TrigoPath"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is the value of sin 30 degrees?","acceptedAnswer":{"@type":"Answer","text":"sin 30 degrees equals 1/2."}},
+{"@type":"Question","name":"What is the basic trigonometric identity?","acceptedAnswer":{"@type":"Answer","text":"sin squared theta plus cos squared theta equals 1 for every angle theta."}}]}]}
+</script>
+<style>
+:root{--ink:#12263f;--pen:#d6452b;--paper:#f7fbff;--grid:#cfe0f2}
+*{box-sizing:border-box;margin:0}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);line-height:1.7;background:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+.w{max-width:820px;margin:0 auto;padding:0 22px}
+.bar{background:var(--ink);color:#fff;font-size:.85rem;padding:8px 0;text-align:center}.bar a{color:#9fd0ff}
+header{padding:60px 0 30px}
+h1,h2{font-family:Fraunces,serif;line-height:1.15}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800}
+h1 em{font-style:normal;border-bottom:5px solid var(--pen)}
+.sub{margin-top:14px;max-width:56ch}
+section{background:rgba(255,255,255,.92);border:2px solid var(--ink);border-radius:6px;padding:28px;margin:26px 0;box-shadow:6px 6px 0 var(--ink)}
+h2{font-size:1.6rem;margin-bottom:12px}
+.formula{font-family:Fraunces,serif;font-size:1.4rem;color:var(--pen);margin:10px 0}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.95rem}
+th,td{border:1px solid var(--ink);padding:8px;text-align:center}th{background:var(--ink);color:#fff}
+.calc{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+input{font:inherit;padding:10px;border:2px solid var(--ink);border-radius:4px;width:130px}
+output{font-family:Fraunces,serif;display:block;margin-top:10px}
+details{border-top:1px solid var(--grid);padding:12px 0}summary{font-weight:500;cursor:pointer}
+footer{text-align:center;padding:30px;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="bar">Sample project by <a href="../index.html">Genius</a> | Back to portfolio</div>
+<header class="w">
+  <h1>Class 11 <em>Trigonometry</em> made simple</h1>
+  <p class="sub">Short notes, the formulas you need for exams, and a calculator to check your answers.</p>
+</header>
+<main class="w">
+  <section id="ratios">
+    <h2>Trigonometric ratios</h2>
+    <p>In a right triangle, each ratio compares two sides relative to the angle θ.</p>
+    <p class="formula">sin θ = opposite / hypotenuse</p>
+    <p class="formula">cos θ = adjacent / hypotenuse</p>
+    <p class="formula">tan θ = opposite / adjacent</p>
+  </section>
+  <section id="identities">
+    <h2>The basic identity</h2>
+    <p>This holds for every angle and is the base of most proofs in the chapter.</p>
+    <p class="formula">sin²θ + cos²θ = 1</p>
+  </section>
+  <section id="table">
+    <h2>Standard angle values</h2>
+    <table>
+      <caption class="sr" style="text-align:left;margin-bottom:6px">Values of sin, cos and tan for common angles</caption>
+      <tr><th>Angle</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr>
+      <tr><th>sin</th><td>0</td><td>1/2</td><td>1/√2</td><td>√3/2</td><td>1</td></tr>
+      <tr><th>cos</th><td>1</td><td>√3/2</td><td>1/√2</td><td>1/2</td><td>0</td></tr>
+      <tr><th>tan</th><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>Not defined</td></tr>
+    </table>
+  </section>
+  <section id="calculator">
+    <h2>Angle calculator</h2>
+    <div class="calc"><label for="deg">Angle in degrees</label><input id="deg" type="number" value="30"></div>
+    <output id="out" aria-live="polite"></output>
+  </section>
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details><summary>What is the value of sin 30°?</summary><p>sin 30° equals 1/2.</p></details>
+    <details><summary>What is the basic trigonometric identity?</summary><p>sin²θ + cos²θ = 1 for every angle θ.</p></details>
+  </section>
+</main>
+<footer>&copy; TrigoPath. Website built by <a href="../index.html">Genius</a>.</footer>
+<script>
+const d=document.getElementById('deg'),o=document.getElementById('out');
+function calc(){const r=d.value*Math.PI/180,t=Math.tan(r);
+o.textContent=`sin = ${Math.sin(r).toFixed(4)}   cos = ${Math.cos(r).toFixed(4)}   tan = ${Math.abs(t)>1e10?'not defined':t.toFixed(4)}`}
+d.addEventListener('input',calc);calc();
+</script>
+</body>
+</html>
